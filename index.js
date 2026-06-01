@@ -27,3 +27,6 @@ function showBooks() {
 
 addBookToLibrary('TLOR', 'Tolkien', 123, true)
 showBooks()
+
+// aside.classList.add('hide');
+//main.classList.add('full-width');

@@ -1,103 +1,112 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
-  </head>
-  <header>
-    <div class="header-left">
-      <img src="./resources/book.png" class="icon" />
-      <h1>Alberto's Library</h1>
-    </div>
-    <div class="header-right">
-      <button class="dark-btn"><span>+</span> New Book</button>
-    </div>
-  </header>
-  <body>
-    <main>
-      <section class="main-content">
-        <div class="main-header">
-          <div class="main-header-border">
-            <img src="./resources/book.png" alt="" class="icon" />
-            <h2>Your Books</h2>
-            <p>25</p>
-          </div>
-          <div class="main-body">
-            <div class="card">
-              <div class="header-card">
-                <h4>The hobbit</h4>
-                <div class="header-tag">
-                  <img src="./resources/author.svg" class="icon icon-card" />
-                  <p>Author: J.R.R Tolkien</p>
-                </div>
-              </div>
-              <div class="header-tag">
-                <img src="./resources/book2.svg" class="icon icon-card" />
-                <p>Pages</p>
-              </div>
-              <div class="header-tag">
-                <img src="./resources/bookmark.svg" class="icon icon-card" />
-                <p>Status: <span class="readed">Read</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <aside>
-        <form>
-          <div class="form-title">
-            <h2>Add New Book</h2>
-            <button class="light-btn">X</button>
-          </div>
-          <div class="form-body">
-            <label for="title">Title</label>
-            <input
-              type="text"
-              id="title"
-              name="title"
-              placeholder="Enter book title"
-            />
-            <label for="Author">Author</label>
-            <input
-              type="text"
-              id="author"
-              name="author"
-              placeholder="Enter author"
-            />
-            <label for="pages">Pages</label>
-            <input
-              type="number"
-              id="pages"
-              name="pages"
-              placeholder="Enter number of pages"
-            />
-            <label>Read Status</label>
-            <div class="form-checkbox">
-              <input type="checkbox" name="read" id="read" />
-              <label for="read">I have read this book</label>
-            </div>
-            <div class="form-buttons">
-              <button class="light-btn">Cancel</button>
-              <button class="dark-btn">Add Book</button>
-            </div>
-          </div>
-        </form>
-      </aside>
-    </main>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+		<link rel="stylesheet" href="index.css" />
+		<script src="index.js" defer></script>
+	</head>
+	<header>
+		<div class="header-left">
+			<img src="./resources/book.png" class="icon" />
+			<h1>Alberto's Library</h1>
+		</div>
+		<div class="header-right">
+			<button class="dark-btn"><span>+</span> New Book</button>
+		</div>
+	</header>
+	<body>
+		<main class="">
+			<section class="main-content">
+				<div class="main-header">
+					<div class="main-header-border">
+						<img src="./resources/book.png" alt="" class="icon" />
+						<h2>Your Books</h2>
+						<p>25</p>
+					</div>
+					<div class="main-body">
+						<div class="card">
+							<div class="header-card">
+								<h4>The hobbit</h4>
+								<div class="header-tag">
+									<img src="./resources/author.svg" class="icon icon-card" />
+									<p>Author: J.R.R Tolkien</p>
+								</div>
+							</div>
+							<div class="header-tag">
+								<img src="./resources/book2.svg" class="icon icon-card" />
+								<p>Pages</p>
+							</div>
+							<div class="header-tag">
+								<img src="./resources/bookmark.svg" class="icon icon-card" />
+								<p>Status: <span class="not-read">Not Read</span></p>
+							</div>
+							<div class="main-btns">
+								<button class="btn-card-purple">
+									<img src="./resources/toogle.svg" class="icon icon-card" />
+									<p>Toogle Read</p>
+								</button>
+								<button class="btn-card-red">
+									<img src="./resources/trash.svg" class="icon icon-card" />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<aside class="">
+				<form>
+					<div class="form-title">
+						<h2>Add New Book</h2>
+						<button class="light-btn">X</button>
+					</div>
+					<div class="form-body">
+						<label for="title">Title</label>
+						<input
+							type="text"
+							id="title"
+							name="title"
+							placeholder="Enter book title"
+						/>
+						<label for="Author">Author</label>
+						<input
+							type="text"
+							id="author"
+							name="author"
+							placeholder="Enter author"
+						/>
+						<label for="pages">Pages</label>
+						<input
+							type="number"
+							id="pages"
+							name="pages"
+							placeholder="Enter number of pages"
+						/>
+						<label>Read Status</label>
+						<div class="form-checkbox">
+							<input type="checkbox" name="read" id="read" />
+							<label for="read">I have read this book</label>
+						</div>
+						<div class="form-buttons">
+							<button class="light-btn">Cancel</button>
+							<button class="dark-btn">Add Book</button>
+						</div>
+					</div>
+				</form>
+			</aside>
+		</main>
+	</body>
 </html>
