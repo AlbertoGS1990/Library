@@ -1,3 +1,5 @@
+import { Library } from "./library.js";
+
 export function Book(title, author, pages, read) {
     if (!new.target) throw new Error("Has tratado de instanciar un libro sin new");
     this.title = title;
@@ -7,10 +9,6 @@ export function Book(title, author, pages, read) {
     this.id = crypto.randomUUID();
 }
 
-export function addBookToLibrary(library,title, author, pages, read) {
-    let book = new Book(title, author, pages, read);
-    library.push(book)
-}
 
 // export function showBooks(library) {
 //     let bookToAdd = null;
