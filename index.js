@@ -3,7 +3,9 @@ import { Book, addBookToLibrary} from "./book.js";
 /* Inicialización */
 
 const myLibrary = [];
-const mainBody = document.querySelector('.main-body')
+const mainBody = document.querySelector('.main-body');
+const aside = document.querySelector('aside');
+const main = document.querySelector('main')
 
 let book1 = new Book('The Hobbit', 'J.R.R Tolkien', 310, true);
 let book2 = new Book('1984', 'George Orwell', 328, false);
@@ -17,11 +19,21 @@ renderBooks(myLibrary)
 // aside.classList.add('hide');
 //main.classList.add('full-width');
 
+/* Mostrar el formulario de entrada de nuevo libro */
+document.getElementById('btn-new-book').addEventListener('click', e => {
+    aside.classList.remove('hide');
+    main.classList.remove('full-width');
+        
+})
+
+
+
 function renderBooks(library) {
     for (let book of library) {
         let { title, author, pages, read } = book;
         let readClass = read ? 'read' : 'not-read';
         let readText = read ? 'Readed' : 'Not Readed';
+        document.getElementById('book-count').textContent = myLibrary.length;
         mainBody.innerHTML += `
             <div class="card">
 							<div class="header-card">

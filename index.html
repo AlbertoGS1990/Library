@@ -25,22 +25,24 @@
 			<h1>Alberto's Library</h1>
 		</div>
 		<div class="header-right">
-			<button class="dark-btn"><span>+</span> New Book</button>
+			<button id="btn-new-book" class="dark-btn">
+				<span>+</span> New Book
+			</button>
 		</div>
 	</header>
 	<body>
-		<main class="">
+		<main class="full-width">
 			<section class="main-content">
 				<div class="main-header">
 					<div class="main-header-border">
 						<img src="./resources/book.png" alt="" class="icon" />
 						<h2>Your Books</h2>
-						<p>25</p>
+						<p id="book-count"></p>
 					</div>
 					<div class="main-body"></div>
 				</div>
 			</section>
-			<aside class="">
+			<aside class="hide">
 				<form>
 					<div class="form-title">
 						<h2>Add New Book</h2>
@@ -74,7 +76,7 @@
 							<label for="read">I have read this book</label>
 						</div>
 						<div class="form-buttons">
-							<button class="light-btn">Cancel</button>
+							<button type="reset" class="light-btn">Cancel</button>
 							<button class="dark-btn">Add Book</button>
 						</div>
 					</div>
